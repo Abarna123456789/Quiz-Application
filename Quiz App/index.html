@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+</head>
+<link rel="stylesheet" href="styles1.css">
+<body style="background-image:url('gift.gif') ; background-size:cover">
+    <div class="header">
+    <div class="logo">
+        <nav>
+        <h1>QUIZ.com</h1>
+    </nav>
+</div>
+</div>
+<!--Start quiz-->
+<div class="quiz-container">
+    <h2 style="color:brown">Math Quiz <br><br></h2>
+    <div id="quiz">
+        <!-- Questions will be dynamically inserted here -->
+    </div>
+    <button id="nextQuestion" onclick="loadNextQuestion()">Next Question</button>
+    <div id="results" class="hidden">
+        <h2>Results</h2>
+        <p id="score"></p>
+        <button id="retry" onclick="retryQuiz()">Retry</button>
+    </div>
+</div>
+<script src="script.js"></script>    
+</body>
+</html>
+
